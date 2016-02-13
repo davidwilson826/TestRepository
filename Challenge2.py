@@ -1,1 +1,1 @@
-
+money = int(input("How much money do you have (stop with 0)? "))
