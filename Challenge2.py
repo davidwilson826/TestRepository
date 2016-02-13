@@ -10,5 +10,13 @@ a = [1,2,3]
 b = [1,2,3]
 c = [1,2,3]
 
-a = (a*len(b)).sort()
-print(a)
+anew = len(c)*((a*len(b)).sort())
+bnew = len(c)*(b*len(a))
+cnew = (c*len(a)*len(b)).sort()
+
+abc = zip(anew, bnew, cnew)
+
+print(anew)
+print(bnew)
+print(cnew)
+print(list(abc))
