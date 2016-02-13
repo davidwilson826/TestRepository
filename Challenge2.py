@@ -46,7 +46,7 @@ while money != 0:
     for x in abc:
         cost = 7*x[0]+15*x[1]+23*x[2]
         if cost == money:
-         if success == "false":
+            if success == "false":
                 message = "You can spend all your money: "
             else:
                 message = "                              "
