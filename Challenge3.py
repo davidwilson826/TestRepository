@@ -45,7 +45,10 @@ string = input("Enter string (q/Q for stop)?	")
 
 nextnum = 0
 
-output = "a"
+if string[0] == 0:
+    output = "a"
+else:
+    output = "a 0"
 
 while len(string) > 1:
     nextnum += 1
