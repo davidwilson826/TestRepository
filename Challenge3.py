@@ -5,11 +5,12 @@ if string[0] == 1:
     
 nextnum = 0
 
-while len(string) > 0:
+while len(string) > 1:
     if string[0] == 0:
         nextnum += 1
         if string[1] == 0:
             output += " "+str(nextnum)
             nextnum = 0
         string = string[1:]
-        print(string)
+
+output += "0"
