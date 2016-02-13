@@ -50,7 +50,8 @@ output = "a"
 while len(string) > 1:
     nextnum += 1
     if string[0] != string[1] or len(string) == 2:
-        output += " "+str(nextnum+1)
+        output += " "+str(nextnum)
+        nextnum = 0
     string = string[1:]
     
-print(output[2:])
+print(output[2:-1]+str(int(output[-1]+1)))
