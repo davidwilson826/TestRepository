@@ -12,3 +12,4 @@ while len(string) > 0:
             output += " "+str(nextnum)
             nextnum = 0
         string = string[1:]
+        print(string)
