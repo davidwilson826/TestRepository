@@ -43,9 +43,9 @@ print("done")
 
 string = "a"
 
-while string != "q" or "Q":
+while string != "q" and "Q":
     string = input("Enter string (q/Q for stop)?	")
-    if string != "q" or "Q":
+    if string != "q" and "Q":
         nextnum = 0
 
         if string[0] == "1":
