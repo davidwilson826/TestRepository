@@ -45,10 +45,12 @@ string = input("Enter string (q/Q for stop)?	")
 
 nextnum = 0
 
+output = "a"
+
 while len(string) > 1:
     nextnum += 1
     if string[0] != string[1]:
-        output = "done"
+        output += " "+str(nextnum)
     string = string[1:]
     
 print(output)
