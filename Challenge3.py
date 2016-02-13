@@ -50,7 +50,7 @@ output = "a"
 while len(string) > 1:
     nextnum += 1
     if string[0] != string[1] or len(string) == 2:
-        output += " "+str(nextnum)
+        output += " "+str(nextnum+1)
     string = string[1:]
     
-print(output)
+print(output[2:])
