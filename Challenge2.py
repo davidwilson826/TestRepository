@@ -28,9 +28,9 @@ for x in abc:
 
 money = 89
 
-a = list(range(1,money//7+1))
-b = list(range(1,money//15+1))
-c = list(range(1,money//23+1))
+a = list(range(0,money//7+1))
+b = list(range(0,money//15+1))
+c = list(range(0,money//23+1))
 
 anew = len(c)*((a*len(b)).sort())
 bnew = len(c)*(b*len(a))
@@ -46,6 +46,4 @@ print(list(abc))
 for x in abc:
     cost = 7*x[0]+15*x[1]+23*x[2]
     if cost == money:
-        print(cost)
-
-print(list(range(1,5)))
+        print("You can spend all your money:  Hat: "+str(x[0])+" Shirt: "+str(x[1])+" Jacket: "+str(x[2]))
