@@ -43,7 +43,7 @@ print("done")
 
 while string != "q" or "Q":
     string = input("Enter string (q/Q for stop)?	")
-    while string != "q" or "Q":
+    if string != "q" or "Q":
         nextnum = 0
 
         if string[0] == "1":
