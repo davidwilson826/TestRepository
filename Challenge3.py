@@ -65,4 +65,7 @@ while string != "q" and "Q":
                     output = output+" 1"
             string = string[1:]
     
-        print(output[2:])
+        if output[2] == "0":
+            print(output[2:])
+        else:
+            print(output[0:])
