@@ -43,7 +43,19 @@ print(bnew)
 print(cnew)
 print(list(abc))
 
+success = "false"
+
 for x in abc:
     cost = 7*x[0]+15*x[1]+23*x[2]
     if cost == money:
-        print("You can spend all your money:  Hat: "+str(x[0])+" Shirt: "+str(x[1])+" Jacket: "+str(x[2]))
+        if success == "false":
+            message = "You can spend all your money:  "
+        else:
+            message = "                               "
+        print(message+"Hat: "+str(x[0])+" Shirt: "+str(x[1])+" Jacket: "+str(x[2]))
+        success = "true"
+        
+if success == "false":
+    print("You cannot spend all your money!")
+
+success = "false"
