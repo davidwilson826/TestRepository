@@ -41,6 +41,8 @@ while len(string) > 1:
 print("done")
 '''
 
+string = "a"
+
 while string != "q" or "Q":
     string = input("Enter string (q/Q for stop)?	")
     if string != "q" or "Q":
