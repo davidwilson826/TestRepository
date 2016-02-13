@@ -46,6 +46,7 @@ string = "a"
 while string != "q" and "Q":
     string = input("Enter string (q/Q for stop)?	")
     if string != "q" and "Q":
+        stringorig = string
         nextnum = 0
 
         if string[0] == "1":
@@ -58,11 +59,11 @@ while string != "q" and "Q":
             if string[0] != string[1]:
                 output += " "+str(nextnum)
                 nextnum = 0
-            if len(string) == 2:
-                if string[0] == string[1]:
-                    output = output[:-1]+str(int(output[-1])+1)
-                else:
-                    output = output+" 1"
             string = string[1:]
-    
+        
+        if string == stringorig[-2]:
+            output = output[:-1]+str(int(output[-1])+1)
+        else:
+            output = output+" 1"
+        
         print(output[2:])
