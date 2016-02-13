@@ -54,4 +54,4 @@ while len(string) > 1:
         nextnum = 0
     string = string[1:]
     
-print(output[2:-1]+str(int(output[-1]+1)))
+print(output[2:-1]+str(int(output[-1])+1))
