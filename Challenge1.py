@@ -11,5 +11,3 @@ while done == "false":
             print(x)
             done = "true"
     currentnum += 1
-
-print(sums)
