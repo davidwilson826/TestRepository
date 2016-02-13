@@ -27,11 +27,28 @@ while len(string) > 1:
 
 print(output[1:])
 '''
-
+'''
 string = input("Enter string (q/Q for stop)?	")
 
+nextnum = 0
+
 while len(string) > 1:
+    if string[0] == 0:
+        nextnum += 1
     string = string[1:]
     print(string)
     
 print("done")
+'''
+
+string = input("Enter string (q/Q for stop)?	")
+
+nextnum = 0
+
+while len(string) > 1:
+    nextnum += 1
+    if string[0] != string[1]:
+        output = "done"
+    string = string[1:]
+    
+print(output)
