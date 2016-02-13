@@ -61,8 +61,10 @@ while string != "q" and "Q":
                 nextnum = 0
             string = string[1:]
         
-        if string == stringorig[-2]:
+        if string == stringorig[-2] and stringorig[-3] == stringorig[-2]:
             output = output[:-1]+str(int(output[-1])+1)
+        elif string == stringorig[-2]:
+            output = output+str(int(output[-1])+1)
         else:
             output = output+" 1"
         
