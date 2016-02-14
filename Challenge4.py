@@ -1,6 +1,6 @@
 
-string1 = "aaaaabbccccc" #input("Enter first string? ")
-string2 = "aabbaaaaabcccc" #input("Enter second string? ")
+string1 = "I am a very big fan of computer science contests" #input("Enter first string? ")
+string2 = "I am a big fan of science contests" #input("Enter second string? ")
 
 s1sl = list(string1)
 s2sl = list(string2)
@@ -26,12 +26,15 @@ for x in s1l:
                 charnum += 1
             if len(currcstring) > len(cstring):
                 cstring = currcstring
-            print(clist1)
+            currcstring = "a"
+    print(cstring[1:])
+
+'''
+print(clist1)
             print(clist2)
             print(cstring[1:])
             print(charnum)
-
-
+'''
 '''
 a = [1,2,3]
 b = [1,2,3]
