@@ -1,6 +1,6 @@
-
+'''
 string1 = "david" #input("Enter first string? ")
-string2 = "dog" #input("Enter second string? ")
+string2 = "dawgvi" #input("Enter second string? ")
 
 s1sl = list(string1)
 s2sl = list(string2)
@@ -26,12 +26,12 @@ for x in s1l:
                 charnum += 1
             if len(currcstring) > len(cstring):
                 cstring = currcstring
-            elif len(currcstring) == len(cstring) and currcstring != cstring:
+            elif len(currcstring)-1 == len(cstring) and currcstring != cstring:
                 cstring = list(cstring)+currcstring
             currcstring = "a"
             
 print(cstring[1:])
-
+'''
 '''
 print(clist1)
             print(clist2)
@@ -46,3 +46,7 @@ ab = list(zip(a,b))
 
 print(ab[0][1])
 '''
+a = "Hello, "
+b = "world!"
+ab = list(a)+b
+print(ab)
