@@ -21,11 +21,10 @@ for x in s1l:
             clist2 = s2l[s2l.index(y):]
             
             charnum = 0
-            while clist1[charnum][1] == clist2[charnum][1]:
-                if len(clist1)-1 > charnum and len(clist2)-1 > charnum:
-                    currcstring += clist1[charnum][1]
-                    charnum += 1
-                    print(charnum)
+            while clist1[charnum][1] == clist2[charnum][1] and len(clist1)-1 > charnum and len(clist2)-1 > charnum:
+                currcstring += clist1[charnum][1]
+                charnum += 1
+                print(charnum)
             if len(currcstring) > len(cstring):
                 cstring = currcstring
             currcstring = "a"
