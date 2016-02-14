@@ -27,6 +27,7 @@ for x in s1l:
             if len(currcstring) > len(cstring):
                 cstring = currcstring
             currcstring = "a"
+            
     print(cstring[1:])
 
 '''
