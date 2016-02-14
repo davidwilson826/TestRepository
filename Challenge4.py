@@ -1,4 +1,4 @@
-'''
+
 string1 = "david" #input("Enter first string? ")
 string2 = "dog" #input("Enter second string? ")
 
@@ -14,15 +14,7 @@ s2l = zip(s2sl, s2nl)
 for x in s1l:
     for y in s2l:
         if x[1] == y[1]:
-            cstring1 = s1l[s1l.find(x):]
-            cstring2 = s2l[s2l.find(y):]
+            cstring1 = s1l[s1l.index(x):]
+            cstring2 = s2l[s2l.index(y):]
             print(cstring1)
             print(cstring2)
-'''
-a = [1,2,3]
-b = [1,2,3]
-ab = zip(a,b)
-
-num = ab.find((1,1))
-
-print(num)
