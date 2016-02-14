@@ -26,3 +26,13 @@ for x in s1l:
                 clist2 = clist2[1:]
             print(clist1)
             print(clist2)
+            print(cstring)
+'''
+
+a = [1,2,3]
+b = [1,2,3]
+
+ab = list(zip(a,b))
+
+print(ab[0][1])
+'''
