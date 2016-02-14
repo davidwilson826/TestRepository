@@ -1,6 +1,6 @@
 
-string1 = "I am a very big fan of computer science contests" #input("Enter first string? ")
-string2 = "I am a big fan of science contests" #input("Enter second string? ")
+string1 = "david" #input("Enter first string? ")
+string2 = "dog" #input("Enter second string? ")
 
 s1sl = list(string1)
 s2sl = list(string2)
@@ -19,11 +19,13 @@ for x in s1l:
         if x[1] == y[1]:
             clist1 = s1l[s1l.index(x):]
             clist2 = s2l[s2l.index(y):]
-
+            
             charnum = 0
             while clist1[charnum][1] == clist2[charnum][1]:
-                currcstring += clist1[charnum][1]
-                charnum += 1
+                if len(clist1)-1 > charnum and len(clist2)-1 > charnum:
+                    currcstring += clist1[charnum][1]
+                    charnum += 1
+                    print(charnum)
             if len(currcstring) > len(cstring):
                 cstring = currcstring
             currcstring = "a"
