@@ -1,3 +1,4 @@
+'''
 string1 = "david" #input("Enter first string? ")
 string2 = "dog" #input("Enter second string? ")
 
@@ -17,3 +18,11 @@ for x in s1l:
             cstring2 = s2l[s2l.find(y):]
             print(cstring1)
             print(cstring2)
+'''
+a = [1,2,3]
+b = [1,2,3]
+ab = zip(a,b)
+
+num = ab.find((1,1))
+
+print(num)
