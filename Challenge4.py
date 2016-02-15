@@ -1,6 +1,6 @@
 
 string1 = "david" #input("Enter first string? ")
-string2 = "dawgvi" #input("Enter second string? ")
+string2 = "dog" #input("Enter second string? ")
 
 s1sl = list(string1)
 s2sl = list(string2)
@@ -11,7 +11,7 @@ s2nl = list(range(0, len(string2)))
 s1l = list(zip(s1nl, s1sl))
 s2l = list(zip(s2nl, s2sl))
 
-cstring = "a"
+cstring = ["a"]
 currcstring = "a"
 
 for x in s1l:
@@ -26,7 +26,7 @@ for x in s1l:
                 charnum += 1
             if len(currcstring) > len(cstring):
                 cstring = currcstring
-            elif len(currcstring)-1 == len(cstring) and currcstring != cstring:
+            elif len(currcstring)-1 == len(cstring):
                 cstring = list(cstring)+currcstring
             currcstring = "a"
             
