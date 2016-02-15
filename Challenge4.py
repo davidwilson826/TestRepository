@@ -1,6 +1,6 @@
 
-string1 = "aqaccb" #input("Enter first string? ")
-string2 = "eqeccb" #input("Enter second string? ")
+string1 = "ARITHMETICS" #input("Enter first string? ")
+string2 = "MATHETICSaa" #input("Enter second string? ")
 
 s1sl = list(string1)
 s2sl = list(string2)
