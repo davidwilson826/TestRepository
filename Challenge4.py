@@ -1,4 +1,4 @@
-'''
+
 string1 = "david" #input("Enter first string? ")
 string2 = "dawgvi" #input("Enter second string? ")
 
@@ -31,7 +31,7 @@ for x in s1l:
             currcstring = "a"
             
 print(cstring[1:])
-'''
+
 '''
 print(clist1)
             print(clist2)
@@ -46,7 +46,15 @@ ab = list(zip(a,b))
 
 print(ab[0][1])
 '''
+'''
 a = "Hello, "
 b = "world!"
 ab = list(a)+b
 print(ab)
+'''
+'''
+a = ["a"]
+b = "hello"
+ab = a+b
+print(ab)
+'''
