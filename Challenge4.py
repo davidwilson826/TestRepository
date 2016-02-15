@@ -24,13 +24,6 @@ for x in s1l:
             while clist1[charnum][1] == clist2[charnum][1] and len(clist1)-1 > charnum and len(clist2)-1 > charnum:
                 currcstring += clist1[charnum][1]
                 charnum += 1
-            if len(clist1)-1 <= charnum or len(clist2)-1 <= charnum:
-                if len(clist1) < len(clist2) and clist1[-1] == clist2[clist1[-1].find]:
-                    currcstring += clist1[-1][1]
-                elif len(clist1) > len(clist2) and clist2[-1] == clist1[clist2[-1].find]:
-                    currcstring += clist1[-1][1]
-                elif len(clist1) == len(clist2) and clist1[-1] == clist2[-1]:
-                    currcstring += clist1[-1][1]
             if len(currcstring) > len(cstring[-1]):
                 cstring = ["a", currcstring[1:]]
             elif len(currcstring)-1 == len(cstring[-1]):
