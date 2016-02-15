@@ -25,9 +25,9 @@ for x in s1l:
                 currcstring += clist1[charnum][1]
                 charnum += 1
             if len(currcstring) > len(cstring):
-                cstring = currcstring
+                cstring = ["a", currcstring]
             elif len(currcstring)-1 == len(cstring):
-                cstring = list(cstring)+currcstring
+                cstring += currcstring
             currcstring = "a"
             
 print(cstring[1:])
