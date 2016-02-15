@@ -30,7 +30,8 @@ for x in s1l:
                 cstring += currcstring
             currcstring = "a"
             
-print(cstring[1:])
+for x in cstring[1:]:
+    print(x)
 
 '''
 print(clist1)
