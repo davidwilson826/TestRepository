@@ -21,11 +21,22 @@ while pos[0] < size:
         print(toprint, end=" ")
         pos[1] += 1
 
-hdist = size
-vdist = size
+hdist = 0
+vdist = 0
 pos = [0, 0]
 nprint = 0
 
+while nprint < size**2:
+    while pos[1] < size-hdist:
+        pos[1] += 1
+    while pos[0] < size-vdist:
+        pos[0] += 1
+    while pos[1] > hdist:
+        pos[1] -= 1
+    while pos[0] > vdist:
+        pos[0] -= 1
+
+'''
 while nprint < size**2:
     print(mlist[pos[0]*size+pos[1]], end=" ")
     if pos[0] == size-vdist and pos[1] < hdist:
@@ -37,7 +48,7 @@ while nprint < size**2:
     elif pos[1] == size-hdist and pos[0] > size-hdist:
         pos[0] -= 1
     nprint += 1
-
+'''
 '''
 pos = [0, 0]
 nprint = 0
@@ -66,6 +77,6 @@ print(direc)
         
 hdist = 5
 vdist = 5
-'''
 
 changedirec([0, 0])
+'''
