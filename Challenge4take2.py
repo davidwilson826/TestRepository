@@ -1,6 +1,6 @@
 
-string1 = "aacaa"#input("Enter first string? ")
-string2 = "aadaa"#input("Enter second string? ")
+string1 = "aadc"#input("Enter first string? ")
+string2 = "faaghc"#input("Enter second string? ")
 
 l1 = list(zip(range(0, len(string1)), list(string1)))
 l2 = list(zip(range(0, len(string2)), list(string2)))
@@ -32,7 +32,6 @@ for x in l1:
                 cstring += currstring[1:]
             elif len(currstring[1:]) > len(cstring[-1]):
                 cstring = ["a", currstring[1:]]
-            
             
             
 for x in cstring[1:]:
