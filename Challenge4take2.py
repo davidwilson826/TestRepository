@@ -22,10 +22,10 @@ for x in l1:
                 l1index += 1
                 l2index += 1
             
-            if len(cstring[-1]) == len(currstring):
-                cstring += currstring
-            elif len(currstring) > len(cstring[-1]):
-                cstring = ["a", currstring]
+            if len(currstring[1:]) == len(cstring[-1]):
+                cstring += currstring[1:]
+            elif len(currstring[1:]) > len(cstring[-1]):
+                cstring = ["a", currstring[1:]]
             
             print(l1index)
             print(l2index)
