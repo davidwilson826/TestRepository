@@ -17,9 +17,12 @@ for x in l1:
             l1index = l1.index(x)
             l2index = l2.index(y)
             
-            print(l1index)
-            print(l2index)
             
+            if l1index <= len(l1)-1 and l2index <= len(l2)-1:
+                print(l1index)
+                print(l2index)
+                print(l1[l1index][1])
+                print(l2[l2index][1])
             while l1[l1index][1] == l2[l2index][1] and l1index <= len(l1)-1 and l2index <= len(l2)-1:
                 currstring += l1[l1index][1]
                 l1index += 1
