@@ -36,10 +36,17 @@ while nprint < size**2-1:
 
 def changedirec(x):
     if x[1] == hdist:
-        x = [-1, 0]
+        direc = [-1, 0]
     elif x[1] == 0:
-        x = [1, 0]
+        direc = [1, 0]
     elif x[0] == vdist:
-        x = [0, -1]
+        direc = [0, -1]
     elif x[0] == 0:
-        x = [0, 1]
+        direc = [0, 1]
+print(direc)
+        
+hdist = 5
+vdist = 5
+
+changedirec([0, 0])
+print(direc)
