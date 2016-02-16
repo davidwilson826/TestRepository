@@ -20,3 +20,15 @@ while pos[0] < size:
     else:
         print(toprint, end=" ")
         pos[1] += 1
+        
+pos = [0, 0]
+nprint = 0
+hdist = size
+vdist = 0
+
+while nprint < size**2-1:
+    print(mlist[pos[0]*size+pos[1]], end=" ")
+    if pos[1] == hdist:
+        pos[0] += 1
+    elif pos[0] == vdist:
+        pos[1] += 1
