@@ -26,7 +26,7 @@ for x in l1:
             
             
 for x in cstring[1:]:
-    print(x)
+    print(x+"		#"+str(len(x)))
 '''
 a = ["a"]
 a += ["hello"]
