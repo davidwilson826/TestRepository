@@ -11,7 +11,7 @@ print("Matrix Generated: ")
 
 pos = [0, 0]
 
-while (pos[0]+1)*(pos[1]+1) <= size**2:
+while pos[0] < size:
     toprint = mlist[pos[0]*size+pos[1]]
     if pos[1]+1 == size:
         print(toprint)
