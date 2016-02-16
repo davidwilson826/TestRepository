@@ -1,6 +1,6 @@
 from random import randint
 
-size = 3 #input("Matrix size? ")
+size = 5 #input("Matrix size? ")
 
 alpha = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 
@@ -24,11 +24,10 @@ while pos[0] < size:
 pos = [0, 0]
 nprint = 0
 hdist = size
-vdist = 0
+vdist = size
+direc = [1, 0]
 
 while nprint < size**2-1:
     print(mlist[pos[0]*size+pos[1]], end=" ")
-    if pos[1] == hdist:
-        pos[0] += 1
-    elif pos[0] == vdist:
-        pos[1] += 1
+    pos = [pos[0]+direc[1], pos[1]+direc[0]]
+    nprint += 1
