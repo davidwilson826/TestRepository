@@ -29,6 +29,7 @@ nprint = 0
 def posprint(x):
     print(pos)
     print(x[pos[0]*size+pos[1]], end=" ")
+    nprint += 1
 
 while nprint < size**2:
     while pos[1] < size-hdist-1:
