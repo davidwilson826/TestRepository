@@ -1,11 +1,10 @@
 from random import randint
 
-size = 5 #input("Matrix size? ")
+size = input("Matrix size? ")
 
 alpha = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 
 mlist = [alpha[randint(0, 25)] for x in [1]*size**2]
-print(mlist)
 
 print("Matrix Generated: ")
 
@@ -24,14 +23,14 @@ while pos[0] < size:
 hdist = 0
 vdist = 0
 pos = [0, 0]
-nprint = 0
 
 def posprint(x):
     print(pos)
     print(x[pos[0]*size+pos[1]], end=" ")
-    nprint += 1
 
-while nprint < size**2:
+a = 0
+
+while a < size:
     while pos[1] < size-hdist-1:
         posprint(mlist)
         pos[1] += 1
@@ -46,6 +45,9 @@ while nprint < size**2:
     while pos[0] > vdist:
         posprint(mlist)
         pos[0] -= 1
+    a += 1
+    
+posprint(mlist)
 
 '''
 while nprint < size**2:
