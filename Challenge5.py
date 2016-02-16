@@ -27,13 +27,14 @@ pos = [0, 0]
 nprint = 0
 
 def posprint(x):
-    print(x[pos[0]*size+pos[1]])
+    print(pos)
+    print(x[pos[0]*size+pos[1]], end=" ")
 
 while nprint < size**2:
-    while pos[1] < size-hdist:
+    while pos[1] < size-hdist-1:
         posprint(mlist)
         pos[1] += 1
-    while pos[0] < size-vdist:
+    while pos[0] < size-vdist-1:
         posprint(mlist)
         pos[0] += 1
     vdist += 1
