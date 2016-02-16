@@ -1,6 +1,6 @@
 from random import randint
 
-size = input("Matrix size? ")
+size = int(input("Matrix size? "))
 
 alpha = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 
@@ -25,7 +25,6 @@ vdist = 0
 pos = [0, 0]
 
 def posprint(x):
-    print(pos)
     print(x[pos[0]*size+pos[1]], end=" ")
 
 a = 0
